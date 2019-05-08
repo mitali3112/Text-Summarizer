@@ -21,7 +21,9 @@ conda activate tensorflow_env
  - NPM
  - Bower
 7. Only for first time installation
+
 ```git clonehttps://github.com/mitali3112/Text-Summarizer.git```
+
 8. Enter the server folder and execute the notebook titled "Text Summarization.ipynb"
 -Compile and run all the cells
 -Download the dataset from kaggle from the link given below
@@ -42,12 +44,18 @@ Setup done
 ## Running the project
 In different terminal tabs (All actvated under tensorflow environment created)
 1. Got to app/
+
 ```node run_app.js```
+
 2. Go to server/
+
 ```python3 server.py```
+
 3.Now go to http://localhost:8000/ and the frontend is there.
 4. To launch the tensorboard
+
 ```tensorboard --logdir='full path to tensorboard savepath' ```
+
 
 ### Example
 

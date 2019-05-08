@@ -52,13 +52,16 @@ In different terminal tabs (All actvated under tensorflow environment created)
 ```python3 server.py```
 
 3.Now go to http://localhost:8000/ and the frontend is there.
+
 4. To launch the tensorboard
 
 ```tensorboard --logdir='full path to tensorboard savepath' ```
 
 
-### Example
-
+## Dataset
+Download the dataset from the link
+[All the News Dataset](https://www.kaggle.com/snapcrack/all-the-news)
+Times of India dataset is present in the repository as toi.csv
 
 ## Built With
 
@@ -70,12 +73,12 @@ In different terminal tabs (All actvated under tensorflow environment created)
 
 ## Authors
 
-* **Mitali Sheth** - *Initial work* - [Mitali Sheth](https://github.com/mitali3112/Text-Summarizer)
+* **Mitali Sheth** - [Mitali Sheth](https://github.com/mitali3112/Text-Summarizer)
 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* 
 * Inspiration
 * etc
 

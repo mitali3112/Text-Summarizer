@@ -1,8 +1,7 @@
 # Text-Summarizer
-A project to implement extractive Text Summarization Using OCR and Attention NetworksIn this project, we propose to build a model that performs extractive summarization of a news article with the aid of Optical
-Character Recognition and Attention Networks. We achieve this by building a model with the algorithms of Recurrent Neural Networks
-and Bi-directional Long Short Term Memory. We use Bahadanu Attention with the neural architecture to achieve the Attention
-Network. It’s main objective is to summarize the text from an image of an article and display it’s result.
+A project to implement extractive Text Summarization Using OCR and Attention Networks.
+In this project, we propose to build a model that performs extractive summarization of a news article with the aid of Optical
+Character Recognition and Attention Networks. We achieve this by building a model with the algorithms of Recurrent Neural Networks and Bi-directional Long Short Term Memory. We use Bahadanu Attention with the neural architecture to achieve the Attention Network. It’s main objective is to summarize the text from an image of an article and display it’s result.
 
 ## Getting Started
 Basic software requirements-
@@ -61,6 +60,7 @@ In different terminal tabs (All actvated under tensorflow environment created)
 ## Dataset
 Download the dataset from the link
 [All the News Dataset](https://www.kaggle.com/snapcrack/all-the-news)
+
 Times of India dataset is present in the repository as toi.csv
 
 ## Built With
@@ -75,11 +75,5 @@ Times of India dataset is present in the repository as toi.csv
 
 * **Mitali Sheth** - [Mitali Sheth](https://github.com/mitali3112/Text-Summarizer)
 
-
-## Acknowledgments
-
-* 
-* Inspiration
-* etc
 
 

@@ -1,0 +1,67 @@
+<div class="" style="width:100%">
+  <md-content >
+    <md-tabs md-dynamic-height class="md-primary" md-center-tabs>
+      <md-tab label="Text Summarization">
+        <md-content class="md-padding">
+          <h4 class="md-display-1 text-center">Text Summarization Using OCR and Attention Networks</h4>
+          <div class="input-main-container">
+              <div class="input-container" style="">
+                  <h5>
+                      Text-Based Summarization
+                  </h5>
+                  <textarea name="name" ng-model="text" rows="10" cols="48"></textarea>
+                  <div class="btn-container">
+                      <button class="btn btn-primary" ng-disabled="text == '' || text==undefined"  ng-click="submit_text()" type="submit" name="button">Submit</button>
+                  </div>
+              </div>
+              <div class="input-container" style="">
+                  <h5>
+                      OCR-Based Summarization
+                  </h5>
+                  <div class="btn btn-primary" ngf-select="upload($file)" ng-model="file" name="file" ngf-pattern="'image/*'"
+                      ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100">Select
+                  </div>
+                  <img src="{{file.$ngfBlobUrl}}" style="width:350px;margin-top:15px;" alt="">
+              </div>
+          </div>
+          <div class="response-main-container">
+              <div class="text-center" ng-show="fetchingFlag==true">
+                  <h5>Please wait.. Fetching your response</h5>
+                  <div class="spinner-border" role="status">
+                      <span class="sr-only">Loading...</span>
+                  </div>
+              </div>
+              <div class="" ng-show="fetchingFlag==false">
+                      <h3 class="text-center">Response received from Text Summarizer</h3>
+                  <div class="response-container">
+                      <h5> <b>Actual Text</b></h5><p>{{resp1}}</p>
+                      <h5> <b>Actual Summary</b></h5><p>{{resp2}}</p>
+                      <h5> <b>Predicted Summary</b></h5><p>{{resp3}}</p>
+                  </div>
+              </div>
+          </div>
+        </md-content>
+      </md-tab>
+      <md-tab label="About us">
+        <md-content class="md-padding">
+          <h2 class="md-display-1">About the project</h2>
+          <p class="md-body-1">
+            Our everyday life is populated with data and information, from newspapers in the morning to the story books at night, from the twitter world tweets and retweets to the stock market analysis reports, all of which is mostly textual in the physical and the digital world. Summarization, which refers to presenting the data in concise form, is really necessary to comprehend all this information in the smallest amount of time.
+          </p>
+          <p class="md-body-1">
+             We have built a model that uses extractive summarization along with OCR (optical character recognition) and Attention Networks that could summarize the news articles or reports from a document styled data input.
+          </p>
+          <p class="md-body-1">
+            OCR: To convert the data given in the image into a text format by indentifying regions with text
+            Recurrent Neural Networks: A type of neural networks that have the ability to retain information from its previous inputs and carry it to the next stage along with the new input.
+            Long Short Term Memory: Also called asbLSTM Networks are capable of handling the long term dependencies as they can remember information for a long period of time.
+            Attention Networks: They are an example of augmented neural networks whose behavior is to focus on a part or subset of information that is given to them.
+          </p>
+          <center>
+          <img src="images/pic.png" alt="HTML5 Icon" style="width:700px;height:300px;">
+          </center>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
